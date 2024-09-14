@@ -33,30 +33,42 @@
                         <h3 class="history-heading uppercase">Work History</h3>
                     </div>
                 </div>
-                <div class="history-items">
+                <div class="history-items">    
                     <div class="timeline-item" data-dates="May 2022 - Present">
                         <h4>Salesforce Software Developer</h4>
                         <p>Barclays Wealth Management, Barclays Bank</p>
+                        <div class="timeline-item-desc">
+                        </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Aug 2021">
                         <h4>Mechanical Engineer Intern</h4>
                         <p>Touch Bionics, Össur</p>
+                        <div class="timeline-item-desc">
+                        </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Sep 2020">
                         <h4>Design & Inspection Engineer Intern</h4>
                         <p>Ritchie Precision Engineering</p>
+                        <div class="timeline-item-desc">
+                        </div>
                     </div>
                     <div class="timeline-item" data-dates="Aug 2019 - Jan 2020">
                         <h4>Product Design Consultant</h4>
                         <p>OBADIAH Coffee Roasters</p>
+                        <div class="timeline-item-desc">
+                        </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Aug 2019">
                         <h4>CAD Designer Intern</h4>
                         <p>Helia Photonics</p>
+                        <div class="timeline-item-desc">
+                        </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Aug 2018">
                         <h4>Opto-Mechanical Engineer Intern</h4>
                         <p>Optos, Nikon Group</p>
+                        <div class="timeline-item-desc">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,5 +154,12 @@
 
     <div id="footer"></div>
 </body>
+
+
+<script>
+$('.timeline-item').click(function(){
+    $(this).find('.timeline-item-desc').toggleClass('d-none');
+});
+</script>
 
 </html>
