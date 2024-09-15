@@ -35,39 +35,83 @@
                 </div>
                 <div class="history-items">    
                     <div class="timeline-item" data-dates="May 2022 - Present">
-                        <h4>Salesforce Software Developer</h4>
-                        <p>Barclays Wealth Management, Barclays Bank</p>
-                        <div class="timeline-item-desc">
+                        <h4 class="underline">Salesforce Software Developer</h4>
+                        <h6>Barclays Wealth Management, Barclays Bank</h6>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="timeline-item-desc d-none">
+                            <ul>
+                                <li>
+                                    Became a key team player being the main Salesforce developer in my team, teaching new joiners in their development and leading team discussions.
+                                </li>
+                                <li>
+                                    Solely designed custom LWCs from the ground up, integrated with custom Apex controllers, triggers, SOQL queries and metadata.
+                                </li>
+                                <li>
+                                    Designed and constructed Java mini apps with database integrations and APIs to Salesforce and other internal systems.
+                                </li>
+                                <li>
+                                    Presented fortnightly demos to stakeholders to gather feedback on new functionality.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Aug 2021">
                         <h4>Mechanical Engineer Intern</h4>
-                        <p>Touch Bionics, Össur</p>
-                        <div class="timeline-item-desc">
+                        <h6>Touch Bionics, Össur</h6>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="timeline-item-desc d-none">
+                            <ul>
+                                <li>
+                                    Designed, modelled, and presented personal projects to company executives at design reviews.
+                                </li>
+                                <li>
+                                    Gained immersive knowledge of management and cost reduction strategies utilised within engineering businesses and the philosophy for sustaining strong customer relationships.
+                                </li>
+                                <li>
+                                    Determined strategies for improving the production process by creating simpler designs and clearer manufacturing and building instructions in accordance with technical requirements.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Sep 2020">
                         <h4>Design & Inspection Engineer Intern</h4>
-                        <p>Ritchie Precision Engineering</p>
-                        <div class="timeline-item-desc">
+                        <h6>Ritchie Precision Engineering</h6>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="timeline-item-desc d-none">
+                            <ul>
+                                <li>
+                                    Automated inspection processes using PC-DMIS code and CMM software, increasing the accuracy and throughput of the company’s inspection stage.
+                                </li>
+                                <li>
+                                    Exceeded expectations of work rate, knowledge retention and ability for learning quickly on the job, evidenced through a permanent job offer before graduating from university.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="timeline-item" data-dates="Aug 2019 - Jan 2020">
                         <h4>Product Design Consultant</h4>
-                        <p>OBADIAH Coffee Roasters</p>
-                        <div class="timeline-item-desc">
+                        <h6>OBADIAH Coffee Roasters</h6>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="timeline-item-desc d-none">
+                            <ul>
+                                <li>
+                                    Contracted as sole product design consultant for Obadiah Coffee Roasters to design a bespoke sustainable coffee container for multipurpose café functionality.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Aug 2019">
                         <h4>CAD Designer Intern</h4>
-                        <p>Helia Photonics</p>
-                        <div class="timeline-item-desc">
+                        <h6>Helia Photonics</h6>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="timeline-item-desc d-none">
                         </div>
                     </div>
                     <div class="timeline-item" data-dates="Jun - Aug 2018">
                         <h4>Opto-Mechanical Engineer Intern</h4>
-                        <p>Optos, Nikon Group</p>
-                        <div class="timeline-item-desc">
+                        <h6>Optos, Nikon Group</h6>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="timeline-item-desc d-none">
                         </div>
                     </div>
                 </div>
@@ -159,6 +203,7 @@
 <script>
 $('.timeline-item').click(function(){
     $(this).find('.timeline-item-desc').toggleClass('d-none');
+    $(this).find('.fa-ellipsis-h').toggleClass('d-none');
 });
 </script>
 
