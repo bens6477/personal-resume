@@ -33,6 +33,11 @@
                         <h3 class="history-heading uppercase">Work History</h3>
                     </div>
                 </div>
+                <div class="text-center">
+                    <div class="col">
+                        <button id="work-history-expand-all" class="btn"><i class="fas fa-plus"></i> <span>Expand All</span></button>
+                    </div>
+                </div>
                 <div class="history-items">    
                     <div class="timeline-item" data-dates="May 2022 - Present">
                         <h4 class="underline">Salesforce Software Developer</h4>
@@ -201,10 +206,28 @@
 
 
 <script>
+// Toggle Work History Description Visibility
 $('.timeline-item').click(function(){
     $(this).find('.timeline-item-desc').toggleClass('d-none');
     $(this).find('.fa-ellipsis-h').toggleClass('d-none');
 });
+
+// Expand All Button Work History 
+$('#work-history-expand-all').click(function(){
+    let buttonText = $(this).find('span').text();
+    if (buttonText == 'Expand All') {
+        $(this).find('span').text('Collapse All');
+        $(this).find('i').toggleClass('fa-plus fa-minus');
+        $('.timeline-item-desc').removeClass('d-none');
+        $('.fa-ellipsis-h').addClass('d-none');
+    } else if (buttonText == 'Collapse All') {
+        $(this).find('span').text('Expand All');
+        $(this).find('i').toggleClass('fa-plus fa-minus');
+        $('.timeline-item-desc').addClass('d-none');
+        $('.fa-ellipsis-h').removeClass('d-none');
+    }
+});
+
 </script>
 
 </html>

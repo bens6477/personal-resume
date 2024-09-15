@@ -339,6 +339,12 @@ footer {
     margin-bottom: 30px;
 }
 
+#work-history-expand-all {
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #525252;
+}
+
 /* ------------------------------------------ Contact Form */
 
 .contact-heading {
